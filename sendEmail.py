@@ -58,7 +58,7 @@ while 1:
         print("开始发送提醒邮件")
         Alerts_sign = 1
         HOST = "pop3.163.com"
-        msg_contents = utils.get_email("nsas_daily@163.com", "", HOST)
+        msg_contents = utils.get_email("email", "password", HOST)
         alerts_list = []
         receive = []
         nick = []
