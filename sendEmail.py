@@ -85,7 +85,7 @@ while 1:
         summary_sign = 1
         dele_sign = 0
         HOST = "pop3.163.com"
-        msg_contents = utils.get_email("nsas_daily@163.com", "VXDUKEHFKHMCKHRT", HOST)
+        msg_contents = utils.get_email("email", "password", HOST)
         for msg in msg_contents:
             name = utils.get_From(msg)
             content = utils.get_content(msg)
@@ -116,7 +116,7 @@ while 1:
         # 将收件箱邮件移动到其他文件夹
         dele_sign = 1
         HOST = "pop3.163.com"
-        utils.dele_mail("nsas_daily@163.com", "VXDUKEHFKHMCKHRT", HOST)
+        utils.dele_mail("email", "password", HOST)
 
         # 初始化标志变量
         summary_sign = 0
